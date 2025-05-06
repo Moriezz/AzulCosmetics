@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ product_name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5"> 
+  <link rel="stylesheet" href="homepage.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Unna:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hp-header">
+    <div class="logo" style="font-weight: bold;">
+      <a href="Homepage.html"><img src="images/azul-logo.png" alt="Logo"></a>
+      <a href="Homepage.html">Home </a>
+      <div class="dropdown2">
+        <a href="allproduct.html">Categories⌄ </a>
+        <div class="content2" style="margin-top: 10px;">
+          <a href="eyes.html">Eyes</a>
+          <a href="face.html">Face</a>
+          <a href="hair.html">Hair</a>
+          <a href="lips.html">Lips</a>
+          <a href="nails.html">Nails</a>
+          <a href="skins.html">Skin</a>
+          <a href="others.html">Others</a>
+        </div>
+      </div>
+      <a href="aboutus.html">About us </a>
+      <a href="about devs.html">About Devs </a>
+    </div>   
+
+    <div class="search-bar">
+      <form action="">
+        <div class="search-container">
+          <input type="search" class="search" placeholder="Lipstick, Foundation, etc...">
+          <button type="submit"><i class="material-icons">search</i>Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="settings">
+      <a href="profile.html"><i class="material-icons">account_circle</i></a>
+      <a href="checkout.html"><i class="material-icons">shopping_cart</i></a>
+      <div class="dropdown">
+        <button><i class="material-icons">reorder</i></button>
+        <div class="content">
+          <a href="profile.html">Account</a>
+          <a href="signin1.html">Logout</a>
+          <a href="purchases.html">Purchases</a>
+        </div>
+      </div>
+    </div>
+  </header>   
+
+  <!-- Main Content -->
+  <div style="width: 90%; margin: auto; justify-content: center; display: flex;">
+    <div>
+      <div class="product-container">
+        <div class="product-img">
+          <img src="{{ product_image_url }}" alt="{{ product_name }}">
+          <div style="display: flex; justify-content: space-between;">
+            <div class="share">
+              <p>Share:</p>
+              <img src="images/facebook.png" alt="">
+              <img src="images/Instagram_logo_2022.svg.webp" alt="">
+              <img src="images/Facebook_Messenger_logo_2020.svg.webp" alt="">
+              <img src="images/telegram.png" alt="">
+              <img src="images/x.png" alt="">
+            </div>
+            <div class="favorite">
+              <p style="margin: 0 5px;">Add to favorites</p>
+              <button id="favorite"><i class="material-icons">favorites</i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <h2>{{ product_name }}</h2>
+          <div class="analytics">
+            <p style="font-weight: bold; font-size:20px; margin: 0;">{{ product_rating }}</p>
+            <i class="large material-icons">star</i><i class="large material-icons">star</i>
+            <i class="large material-icons">star</i><i class="large material-icons">star</i><i class="large material-icons">star</i>
+            <p style="margin: 0 5px 0 10px; border-left:1px solid; padding-left:5px; font-weight: bold;">{{ rating_value }}</p><p>Rating</p>
+            <p style="margin: 0 5px 0 10px; border-left:1px solid; padding-left:5px; font-weight: bold;">{{ sold_quantity }}</p><p>Sold</p>
+          </div>
+
+          <div class="product-price">
+            <h1 style="margin: 0;">₱{{ product_price }}</h1>
+          </div>
+
+          <p style="color: rgba(0, 0, 0, 0.322); font-size: 13px;">Product Description</p>
+          <div class="shipping">
+            {{ product_short_description }}
+          </div>
+
+          <div class="purchase">
+            <button id="addcart"><a href="checkout.html">Add to Cart</a></button>
+            <button id="purchase"><a href="receipt.html">Purchase now</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-specifications">
+        <br><br>
+        <p style="text-decoration: underline;">Product Specifications</p>
+        <p>
+          {{ product_specifications }}
+          <br><br><span style="font-weight: bold; color: rgba(255, 0, 0, 0.61);">Ingredients:</span>
+          <br><br>{{ product_ingredients }}
+          <br><br><span style="font-weight: bold; color: rgba(255, 0, 0, 0.61);">How to use:</span>
+          <br><br>{{ product_how_to_use }}
+          <br><br><span style="font-weight: bold; color: rgba(255, 0, 0, 0.61);">Packaging:</span>
+          <br><br>{{ product_packaging }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

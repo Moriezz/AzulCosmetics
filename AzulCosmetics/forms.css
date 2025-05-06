@@ -1,0 +1,152 @@
+body{
+    justify-content: center;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/background2.jpg');
+}
+
+input{
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid   rgba(255, 53, 53, 0.616);
+    background-color: transparent;
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:  rgba(255, 53, 53, 0.616);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    align-items:center;
+     
+    display: flex;
+    margin: auto;
+    border: 1px solid  rgba(255, 156, 156, 0.637);
+    background-color: white;
+   
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+.reg-container{
+    align-items:center;
+     
+    display: block;
+    margin: auto;
+    border: 1px solid  rgba(255, 156, 156, 0.637);
+    background-color: white;
+    width: initial;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+}
+
+.banner-top{
+    width: 100%;
+    ;
+}
+.banner-top img{
+    height:90px;
+    width: inherit;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+}
+
+.signin-container{
+    padding: 2rem;
+}
+
+.user-pass input{
+    padding: 1rem 1rem 3px 3px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid   rgba(255, 53, 53, 0.616);
+    background-color: transparent;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:  rgba(255, 53, 53, 0.616);
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    font-size: 12px;
+    color: rgba(255, 53, 53, 0.74);
+}
+
+.banner{
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.banner img{
+    width: inherit;
+    height: 500px;
+    border-radius: 15px 0 0 15px;
+}
+
+.remember, .forgot{
+    display: flex;
+    align-items: center;
+    font-weight: 250;
+    font-size: 11px;
+}
+
+.signin-container button{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: rgba(255, 53, 53, 0.74);
+    color: white;
+    width: 125px;
+    padding: 7px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    outline: 0 ;
+    border-radius: 15px;
+}
+
+.reguser-pass{
+    display: flex;
+}
+
+.reguser-pass input{
+    padding: 1rem 1rem 3px 3px;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid   rgba(255, 53, 53, 0.616);
+    background-color: transparent;
+    width: 175px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:  rgba(255, 53, 53, 0.616);
+    margin-right: 7px;
+}
+
+.regform-container{
+    padding: 5px 1rem 1rem 1rem;
+}
+
+.adress{
+    margin: 30px 0 30px 0;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    font-weight: 250;
+    font-size: 11px;
+    justify-content: center;
+    margin: auto;
+}

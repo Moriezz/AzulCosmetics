@@ -1,0 +1,108 @@
+body{
+    background: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{
+    width:250px;
+    background: rgb(131,58,180);
+    background: linear-gradient(187deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    height: 7px;
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: pink;
+    position: fixed;
+    display: none;
+}
+
+
+.landing {
+    padding: 1rem;
+    background: rgb(0,0,0);
+    background-image: linear-gradient(27deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 55%, rgba(0,0,0,0) 100%), url(images/LANDING.png);
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center; 
+    margin: 3rem auto 0 auto
+}
+
+span {
+    font-weight: bold; 
+    color:  rgba(255, 0, 0, 0.61);
+}
+
+.dropdown2{
+    margin: inherit;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown2 a:hover{
+    background-color: transparent;
+    color:  rgba(255, 103, 103, 0.719);
+}
+
+.landing-box h2{
+    color: white;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.445);
+    font-family: 'Poppins', sans-serif; 
+}
+
+.landing-box{
+    width: 500px;
+    height:fit-content ;
+    margin-left: 50px;
+}
+
+.landing-button{
+    color:rgb(255, 255, 255);
+    margin: 0%;
+    font-weight: 500;
+    text-shadow: 1px 3px 3px rgba(255, 49, 49, 0.445);
+}
+
+.landing-details{
+    margin: 0 auto 5rem auto;
+}
+
+.landing-button{
+    border: 1px solid rgba(255, 79, 79, 0.616);
+    background-color: rgba(255, 255, 255, 0.233);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: fit-content;
+    padding: 7px 20px 7px 20px;
+    border-radius: 1px;
+    margin: auto;
+    justify-content: center;
+}
+
+.landing-row{
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem 3rem 3rem;
+    width: 990px;
+    justify-content: center;
+    margin: 5px auto 10px auto;
+}
+
+.landing-row img{
+    width: 350px;
+}
+
+.landing-features{
+    width: 990px;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.507);
+    padding: 1rem;
+    border:1px solid rgba(0, 0, 0, 0.267);
+    color:  rgba(0, 0, 0, 0.623);
+}

@@ -1,0 +1,239 @@
+.logo {
+    height: 63px;
+  }
+  
+  /* navbar */
+  .navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top of the page */
+    width: 100%; /* Full-width navbar */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background: #1f299c; /* Re-apply the background color since fixed elements may override it */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  @media (max-width: 650px) {
+    .search-input {
+      height: 60px;
+      width: 200px; /* Adjust width for smaller screens */
+      max-width: 100%; /* Ensure it doesn't exceed container width */
+      max-height: 100%;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .description {
+      left: 0;
+      padding: 0 15px;
+      position: absolute;
+      top: 10%;
+      transform: none;
+      text-align: center;
+    }
+  
+    .description h1 {
+      font-size: 2em;
+    }
+  
+    .description p {
+      font-size: 1.2rem;
+    }
+  
+    .header {
+      height: 50vh;
+    }
+  
+    .features {
+      margin: 0;
+    }
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.title {
+  margin: 10px 0 0 0;
+}
+
+.categories {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-products, .product-list, .pagination {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th, td, li {
+  color: #000000;
+  list-style: none;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.text-center p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bg-secondary p {
+  color: #fff;
+}
+
+/* admin profile */
+.card-header {
+  background-color: #3d58cc !important;
+}
+
+.card-body {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically center items */
+}
+
+.admin-profile {
+  margin-right: 40px; /* Space between image and text-content */
+  text-align: center; /* Center-align content inside admin-profile */
+}
+
+.admin-profile img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-title {
+  margin-top: 10px; /* Space between image and "Admin Profile" */
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.text-content {
+  flex-grow: 1; /* Allows text-content to take up remaining space */
+}
+
+.card-text {
+  margin-bottom: 20px; /* Space below the text */
+}
+
+.admin-buttons a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.admin-buttons {
+  flex: 1; /* Allow the button to take up remaining space */
+  padding: 8px 16px; /* Increase padding for a larger look */
+  font-size: 1rem; /* Slightly larger text */
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #5372F0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-buttons:hover {
+  background-color: #3c57ce;
+  text-decoration: none;
+}
+
+.button-pos {
+  margin-right: 30px;
+}
+
+.admin-filter {
+  margin: 0 0 10px 10px;
+  flex: 1; /* Allow the button to take up remaining space */
+  padding: 8px 16px; /* Increase padding for a larger look */
+  font-size: 1rem; /* Slightly larger text */
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #5372F0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-filter:hover {
+  background-color: #3c57ce;
+  text-decoration: none;
+}
+
+    .select#category {
+        width: 230px; 
+        height: 60px; 
+        font-size: 16px;
+        padding: 5px; 
+    }
